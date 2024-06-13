@@ -1,0 +1,103 @@
+.hero {
+  height: calc(100vh - 100px);
+  background: linear-gradient(180deg, #0c0c1d, #1b235d);
+  overflow: hidden;
+  position: relative;
+
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    .textContainer {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+
+      h2 {
+        font-size: 32px;
+        color: #c9bbbd;
+        letter-spacing: 10px;
+      }
+
+      h1 {
+        font-size: 65px;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        
+
+        .btn-1 {
+          background-color: #c9bbbd;
+          color: #120035;
+          height: 42px;
+          border-radius: 10px;
+          width: 140px;
+          font-weight: bold;
+          border: none;
+          cursor: pointer;
+        }
+        .btn-2 {
+          background: transparent;
+          height: 42px;
+          border-radius: 10px;
+          width: 120px;
+          color: #c9bbbd;
+          font-weight: bold;
+          border: 1px solid #c9bbbd;
+          cursor: pointer;
+        }
+      }
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+
+  .imageContainer {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0px;
+
+    img {
+      width: 600px;
+    }
+  }
+  .slidingText{
+    position: absolute;
+    font-size: 50vh; 
+    bottom: -120px  ;
+    white-space: nowrap;
+    color: #ffffff09;
+    width: 50%;
+    font-weight: bold;
+  }
+
+  .img-gradient {
+    width: 600px;
+    height: 800px;
+  background: linear-gradient(180deg, #46467734, #1b235d);
+  filter: blur(5px); 
+  // opacity: 0; 
+  animation: fadeIn 2s forwards; 
+
+  }
+}
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
