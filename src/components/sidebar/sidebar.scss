@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .sidebar {
   
   display: flex;
@@ -16,6 +18,11 @@
     bottom: 0;
     width: 400px;
     background: #fffdfd;
+    @include mobile{
+       width: 200px;
+
+      
+     }
 
 
     .links { 
@@ -30,6 +37,11 @@
 
         a{
             font-size: 32px;
+            @include mobile{
+       font-size: 18px;
+
+      
+     }
         }
 
     }
@@ -46,6 +58,12 @@
         align-items: center;
         text-align: center;
         justify-content: center;
+         @include mobile{
+       font-size: 18px !important;
+       font-weight: normal;
+
+      
+     }
     }
      }
 

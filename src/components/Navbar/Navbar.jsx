@@ -23,23 +23,22 @@ const Navbar = () => {
         <div className="socials">
           <a target="_blank" href="https://github.com/sarah-abasiodiong">
             <FaGithub size={24} />
-            {/* <img src="/github.png" alt="" /> */}
+
           </a>
           <a
             target="_blank"
             href="https://www.linkedin.com/in/sarah-akan-738310222/"
           >
             <FaLinkedinIn size={24} />
-            {/* <img src="/linkedIn.png" alt="" /> */}
+
           </a>
           <a target="_blank" href="https://www.behance.net/sarahakan">
             <FaBehance size={24} />
 
-            {/* <img src="/behance.png" alt="" /> */}
           </a>
           <a target="_blank" href="https://x.com/techy_queen">
             <FaXTwitter size={24} />
-            {/* <img src="/twitter.png" alt="" />  */}
+
           </a>
         </div>
       </div>

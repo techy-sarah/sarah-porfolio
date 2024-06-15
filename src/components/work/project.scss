@@ -1,10 +1,12 @@
+@import "../../app.scss";
+
 .projects {
   position: relative;
   background: linear-gradient(180deg, #0c0c1d, #1b235d);
 
   .progress {
     // background: linear-gradient(180deg,  #1b235d, #0c0c1d);
-
+      
     position: sticky;
     top: 0;
     left: 0;
@@ -13,23 +15,35 @@
     color: #58f8fc;
     font-size: 36px;
 
+     @include mobile{
+    //  padding-bottom: 50%;
+     font-size: 24px;
+    
+     
+      
+     }
+ 
     .progressBar {
       height: 10px;
       background-color: #c9bbbd;
-
-      // #dab299;
+ 
+     
     }
   }
 
   .container {
+      // margin-top: 100px;
+
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
     overflow: hidden;
+     
 
     .wrapper {
+
       max-width: 1366px;
       height: 100%;
       margin: auto;
@@ -39,13 +53,27 @@
       gap: 60px;
       padding-left: 10%;
       padding-right: 10%;
+      padding-top: 10%;
+
+      @include mobile{
+        flex-direction: column ;
+     padding-left: 5%;
+      padding-right: 5%;
+      
+     }
 
       .imageContainer {
         flex: 1;
         height: 50%;
         // width: 100%;
         object-fit: cover;
-        
+         @include mobile{
+        width: 100%;
+        max-height: 300px;
+         object-fit: none;
+      
+     }
+
 
         img {
           flex: 1;
@@ -60,18 +88,36 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 24px;
+
+         @include mobile{
+        transform: none !important;
+        text-align: center;
+      
+     }
 
         h2 {
-          font-size: 40px;
+          font-size: 32px;
           // color: #58f8fc;
         }
+        .stackContainer {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          // border: 1px solid salmon;
+          gap: 32px;
+          .stack {
+            width: 150px;
 
-        p {
-          // color: #58f8fc;
+            padding: 12px;
+            border-radius: 40px;
+            background-color: #ffffff09;
+            text-align: center;
+            // color: #58f8fc;
+          }
         }
 
-        a{
+        a {
           text-align: center;
           background-color: #58f8fc;
           color: #120035;
@@ -81,6 +127,12 @@
           border: none;
           font-weight: bold;
           cursor: pointer;
+
+           @include mobile{
+       align-self: center;
+      
+     }
+          
         }
       }
     }

@@ -1,3 +1,4 @@
+import { Toaster } from "sonner";
 import "./app.scss";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
@@ -9,6 +10,7 @@ import Test from "./Test";
 const App = () => {
   return (
     <div>
+      <Toaster position="top-right" />
       <section id="Home" className="">
         <Navbar />
         <Hero />
@@ -22,11 +24,11 @@ const App = () => {
       <section id="Projects">
         <Parallax type={"project"} />
       </section>
-      <Projects/>
-      {/* <section id="Blog">Blog</section> */}
-      <section id="Contact"><Contact/></section>
-      {/* <Test />
-      <Test /> */}
+      <Projects />
+
+      <section id="Contact">
+        <Contact />
+      </section>
     </div>
   );
 };

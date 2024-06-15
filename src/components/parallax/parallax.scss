@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .parallax {
   width: 100%;
   height: 100%;
@@ -6,9 +8,22 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+   @include mobile{
+         height: 100%;
+
+      
+     }
 
   h1 {
     font-size: 100px;
+     @include mobile{
+      z-index: 4;
+        font-size: 60px;
+        text-align: center;
+
+      
+     }
+
   }
 
   .mountains {

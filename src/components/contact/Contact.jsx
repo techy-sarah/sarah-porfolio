@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import "./contact.scss"
 import { motion } from 'framer-motion';
+import emailjs from "@emailjs/browser";
+import { Toaster, toast } from "sonner";
+
+
 
 const Contact = () => {
+  const [error, setError]= useState(false)
+  const [success, setSuccess]= useState(false)
+  const formRef = useRef();
 
   const variants ={
     initial:{
@@ -21,35 +28,56 @@ const Contact = () => {
     }
   }
 
+
+   const sendEmail = (e) => {
+     e.preventDefault();
+
+     emailjs
+       .sendForm("service_3tg8hmp", "template_h9e0bwh", formRef.current, {
+         publicKey: "s8bgc6vLbZDnC-TB_",
+       })
+       .then(
+         () => {
+           toast("Form submitted successfully");
+         },
+         (error) => {
+          toast("Form submission failed");
+
+
+         }
+       );
+   };
+
   return (
-    <motion.div
-      className="contact"
-      variants={variants}
-      initial="initial"
-      whileInView="animate"
-    >
-      <motion.div className="textContainer" variants={variants}>
-        <motion.h3>Let's Work together !</motion.h3>
+   
+      <motion.div
+        className="contact"
+        variants={variants}
+        initial="initial"
+        whileInView="animate"
+      >
+        <motion.div className="textContainer" variants={variants}>
+          <motion.h3>Let's Work together !</motion.h3>
 
-        <motion.div className="item" variants={variants}>
-          <p>Email</p>
-          <span>
-            {" "}
-            <a href="mailto:abasiodionsarah@gmail.com">
-              abasiodionsarah@gmail.com
-            </a>
-          </span>
-        </motion.div>
+          <motion.div className="item" variants={variants}>
+            <p>Email</p>
+            <span>
+              {" "}
+              <a href="mailto:abasiodionsarah@gmail.com">
+                abasiodionsarah@gmail.com
+              </a>
+            </span>
+          </motion.div>
 
-        <motion.div className="item" variants={variants}>
-          <p>Phone</p>
-          <span>
-            <a href="tel:+2349122469375">+2349122469375</a>
-          </span>
+          <motion.div className="item" variants={variants}>
+            <p>Phone</p>
+            <span>
+              <a href="tel:+2349122469375">+2349122469375</a>
+            </span>
+          </motion.div>
         </motion.div>
-      </motion.div>
-      <div className="formContainer">
-        {/* <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
+        <div className="formContainer">
+          {/* <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
           <path
             strokeWidth={0.2}
             fill="none"
@@ -71,22 +99,30 @@ const Contact = () => {
             C32.666,7.326,25.339,0,16.333,0z"
           />
         </svg> */}
-        <form className="">
-          <input type="text" placeholder="Enter your name " required />
-          <input
-            type="email"
-            placeholder="Enter your email address "
-            required
-          />
-          <textarea
-            className=""
-            rows={8}
-            placeholder="Write your message"
-          ></textarea>
-          <button>Send Message </button>
-        </form>
-      </div>
-    </motion.div>
+          <form ref={formRef} className="" onSubmit={sendEmail}>
+            <input
+              type="text"
+              placeholder="Enter your name "
+              required
+              name="name"
+            />
+            <input
+              name="email"
+              type="email"
+              placeholder="Enter your email address "
+              required
+            />
+            <textarea
+              name="message"
+              className=""
+              rows={8}
+              placeholder="Write your message"
+            ></textarea>
+            <button>Send Message </button>
+          </form>
+        </div>
+      </motion.div>
+   
   );
 }
 

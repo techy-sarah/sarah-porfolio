@@ -44,6 +44,12 @@ section{
   background-position: center;
 }
 
+@mixin mobile{
+  @media(max-width: 1024px){
+    @content ; 
+  }
+}
+
 // .bg-img::before {
 //   content: '';
 //   position: absolute;
