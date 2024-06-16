@@ -77,12 +77,21 @@ const Hero = () => {
             Frontend Engineer and Product Designer
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants} className="btn-1">
+            <motion.a
+              href={`#Projects`}
+              variants={textVariants}
+              className="btn-1"
+            >
               See my Work
-            </motion.button>
-            <motion.button variants={textVariants} className="btn-2">
-              Contact Me
-            </motion.button>
+            </motion.a>
+            <motion.a
+              download={"sarah-akan-resume"}
+              href="/SARAH AKAN CV.pdf"
+              variants={textVariants}
+              className="btn-2"
+            >
+              Resume
+            </motion.a>
           </motion.div>
           <motion.img
             variants={textVariants}
@@ -99,13 +108,13 @@ const Hero = () => {
         animate="animate"
         className="slidingText"
       >
-       I Design And  Build Durable Products
+        I Design And Build Durable Products
       </motion.div>
       <div className="imageContainer ">
         {/* {recipeImageLoading ? (
           <div className="img-gradient"></div>
         ) : ( */}
-          <img src="/img4.png" alt={"my picture"} />
+        <img src="/img4.png" alt={"my picture"} />
         {/* )} */}
       </div>
     </div>

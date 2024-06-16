@@ -50,6 +50,13 @@ section{
   }
 }
 
+@mixin small{
+  @media(max-width: 700px){
+    @content ; 
+  }
+}
+
+
 // .bg-img::before {
 //   content: '';
 //   position: absolute;

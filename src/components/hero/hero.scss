@@ -69,22 +69,30 @@ padding-top:5% ;
         
 
         .btn-1 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 16px;
           background-color: #c9bbbd;
           color: #120035;
           height: 42px;
           border-radius: 10px;
           width: 140px;
-          font-weight: bold;
+          // font-weight: bold;
           border: none;
           cursor: pointer;
         }
         .btn-2 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 16px;
           background: transparent;
           height: 42px;
           border-radius: 10px;
           width: 120px;
           color: #c9bbbd;
-          font-weight: bold;
+          // font-weight: bold;
           border: 1px solid #c9bbbd;
           cursor: pointer;
         }
