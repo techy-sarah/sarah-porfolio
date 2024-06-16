@@ -50,16 +50,20 @@ const Contact = () => {
 
   return (
    
-      <motion.div
+      <div
         className="contact"
-        variants={variants}
-        initial="initial"
-        whileInView="animate"
+        // variants={variants}
+        // initial="initial"
+        // whileInView="animate"
       >
-        <motion.div className="textContainer" variants={variants}>
-          <motion.h3>Let's Work together !</motion.h3>
+        <div className="textContainer" 
+        // variants={variants}
+        >
+          <h3>Let's Work together !</h3>
 
-          <motion.div className="item" variants={variants}>
+          <div className="item" 
+          // variants={variants}
+          >
             <p>Email</p>
             <span>
               {" "}
@@ -67,15 +71,17 @@ const Contact = () => {
                 abasiodionsarah@gmail.com
               </a>
             </span>
-          </motion.div>
+          </div>
 
-          <motion.div className="item" variants={variants}>
+          <div className="item" 
+          // variants={variants}
+          >
             <p>Phone</p>
             <span>
               <a href="tel:+2349122469375">+2349122469375</a>
             </span>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
         <div className="formContainer">
           {/* <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
           <path
@@ -121,7 +127,7 @@ const Contact = () => {
             <button>Send Message </button>
           </form>
         </div>
-      </motion.div>
+      </div>
    
   );
 }
