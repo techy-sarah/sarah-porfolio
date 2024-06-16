@@ -1,5 +1,7 @@
 
-import Sidebar from "../Sidebar/Sidebar";
+import React from "react";
+
+import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss"
 import { motion } from "framer-motion"
 import { FaGithub } from "react-icons/fa6";
