@@ -10,8 +10,6 @@ const About = () => {
     "Typescript",
     "Tailwind CSS",
     "Next Js",
-    "Stripe",
-    "NextJs",
     "Astro",
     "Vite",
   ];
@@ -31,7 +29,7 @@ const About = () => {
           Frontend Engineer at Zedi Inc. In my free time, I enjoy singing (and
           yes, I have a good voice! 😄), reading, learning new things, cooking,
           watching movies, and dancing (even though I'm not very good at it). I
-          also love meeting new people. Let's connect and create interesting
+          also love meeting new people and so let's connect and create interesting
           solutions together!
         </p>
       </div>

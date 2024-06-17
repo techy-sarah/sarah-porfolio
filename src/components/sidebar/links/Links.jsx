@@ -26,13 +26,14 @@ const itemsVariants = {
   },
 };
 
-const Links = () => {
-  const items = ["Home", "About", "Projects", "Blog", "Contact"];
+const Links = ({ setOpen }) => {
+  const items = ["Home", "About", "Projects",  "Contact"];
   return (
     <motion.div className="links" variants={variants}>
       {items.map((item, index) => (
         <React.Fragment key={index}>
           <motion.a
+            onClick={() => setOpen((prev) => !prev)}
             href={`#${item}`}
             key={item}
             variants={itemsVariants}
@@ -41,7 +42,17 @@ const Links = () => {
           >
             {item}{" "}
           </motion.a>
-          {index === items.length - 1 && <a download={"sarah-akan-resume"} href="/SARAH AKAN CV.pdf" className="btn"> Resume</a>}
+          {index === items.length - 1 && (
+            <a
+              onClick={() => setOpen((prev) => !prev)}
+              download={"sarah-akan-resume"}
+              href="/SARAH AKAN CV.pdf"
+              className="btn"
+            >
+              {" "}
+              Resume
+            </a>
+          )}
         </React.Fragment>
       ))}
     </motion.div>

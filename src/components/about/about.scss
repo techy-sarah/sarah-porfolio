@@ -1,5 +1,14 @@
 @import "../../app.scss";
+#About-me {
+  height: 100vh;
 
+   @include mobile {
+      height: 150%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+    }
+
+}
 .about {
   background: linear-gradient(180deg, #1b235d, #0c0c1d);
 
@@ -13,53 +22,43 @@
   margin: auto;
   gap: 60px;
 
-   @include mobile{
+  @include mobile {
     flex-direction: column;
+    // height: calc(100vh * 50 );
+
+    gap: 60px;
+
     width: 100%;
-    height: 100%;
-    padding-top: 1%;
-    padding-bottom: 5%;
-     margin: none;
-    
-     
-      
-     }
- 
+
+    // padding-top: 1%;
+    // padding-bottom: 5%;
+    //  margin: none;
+  }
+
   // overflow: hidden;
 
   .textContainer {
     flex: 1;
-//     display: flex;
-//     flex-direction: column;
-//     gap: 40px;
 
-//      @include mobile{
-//    gap: 20px;
-//   //  text-align: center;
-//   //  align-items: center;
-//    width: 100%;
-    
-     
-      
-//      }
+     @include mobile {
 
-   
-    p {font-size: 18px;
+      padding-top: 10%;
 
-        text-align: justify;
-    line-height: 35px;
-
-       @include small{
-padding-top: 10%;
-  
-    
-     
-      
-     }
-      
+    }
+    @include small {
+      height: 100%;
     }
 
-    
+    p {
+      font-size: 18px;
+
+      text-align: justify;
+      line-height: 35px;
+
+      @include small {
+        padding-top: 10%;
+      }
+    }
   }
 
   .formContainer {
@@ -67,102 +66,36 @@ padding-top: 10%;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    h4{
-        font-size: 32px;
+    @include small {
+      height: 100%;
     }
 
-     .stackContainer  {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-        //   border: 1px solid salmon;
-          gap: 32px;
-          .stack {
-            width: 150px;
-font-weight: 600;
-            padding: 12px;
-            border-radius: 40px;
-            background-color: #ffffff09;
-            text-align: center;
-            // color: #58f8fc;
+    h4 {
+      font-size: 32px;
+      @include small {
+        font-size: 24px;
+      }
+    }
 
-             @include small{
-           width: 100%;
-  
-    
-     
-      
-     }
-          }
+    .stackContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      //   border: 1px solid salmon;
+      gap: 32px;
+      .stack {
+        width: 150px;
+        font-weight: 600;
+        padding: 12px;
+        border-radius: 40px;
+        background-color: #ffffff09;
+        text-align: center;
+        // color: #58f8fc;
+
+        @include small {
+          width: 100%;
         }
-     @include mobile{
-           width: 100%;
-  
-    
-     
-      
-     }
-    
-
-    // form {
-    //   display: flex;
-    //   flex-direction: column;
-    //   gap: 20px;
-    //   @include mobile{
-    //         gap: 30px;
-
-    //         padding-bottom: 5%;
-  
-    
-     
-      
-    //  }
-      
-
-    //   input {
-    //      font-size: 16px;
-    //     background-color: transparent;
-    //     border-radius: 10px;
-    //     padding: 20px;
-    //     border: 1px solid #fff;
-    //     color: white;
-    //      @include mobile{
-    //        padding: 12px;
-  
-    
-     
-      
-    //  }
-    //   }
-
-    //   textarea {
-    //      font-size: 16px;
-    //     background-color: transparent;
-    //     border-radius: 10px;
-    //     padding: 20px;
-    //     border: 1px solid #fff;
-    //     color: white;
-    //       @include mobile{
-    //        padding: 12px;
-  
-    
-     
-      
-    //  }
-    //   }
-
-    //   button{
-    //      font-size: 16px;
-    //     border: none;
-    //     background-color: #58f8fc ;
-    //     color: #120035 !important;
-
-    //     // font-size: 18px;
-    //     font-weight: bold;
-    //     padding: 20px;
-    //     border-radius: 10px;
-    //     cursor: pointer;
-    //   }
-    // }
+      }
+    }
   }
 }
