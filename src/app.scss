@@ -56,6 +56,12 @@ section{
   }
 }
 
+@mixin large{
+  @media(min-width:1536px){
+    @content ; 
+  }
+}
+
 
 // .bg-img::before {
 //   content: '';

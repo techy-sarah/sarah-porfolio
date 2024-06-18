@@ -118,7 +118,8 @@ return (
           ref={ref}
           className="imageContainer"
         >
-          <img src={item.img} alt="" />
+          
+          <img  src={item.img} alt="" />
         </div>
 
         <motion.div className="textContainer" style={{ y }}>
