@@ -86,7 +86,7 @@ const Hero = () => {
             </motion.a>
             <motion.a
               download={"sarah-akan-resume"}
-              href="/SARAH AKAN CV.pdf"
+              href="/SARAH AKAN RESUME.pdf"
               variants={textVariants}
               className="btn-2"
             >

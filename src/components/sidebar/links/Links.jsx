@@ -46,7 +46,7 @@ const Links = ({ setOpen }) => {
             <a
               onClick={() => setOpen((prev) => !prev)}
               download={"sarah-akan-resume"}
-              href="/SARAH AKAN CV.pdf"
+              href="/SARAH AKAN RESUME.pdf"
               className="btn"
             >
               {" "}
