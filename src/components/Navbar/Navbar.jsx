@@ -23,7 +23,7 @@ const Navbar = () => {
           Sarah Akan
         </motion.span>
         <div className="socials">
-          <a target="_blank" href="https://github.com/sarah-abasiodiong">
+          <a target="_blank" href="https://github.com/techy-sarah">
             <FaGithub size={24} />
 
           </a>
