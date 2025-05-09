@@ -8,7 +8,7 @@ const items = [
   {
     id: 1,
     title: "SendMercury",
-    img: "./send.jpg",
+    img: "./send.png",
     desc: "SendMercury, a product that transcends mere distribution, fosters a global community where vendors effortlessly list products on 70+ online stores. It ensures real-time stock updates across platforms and allows universal management of product details, empowering vendors to excel in an interconnected marketplace of limitless potential. ",
     url: "https://sendmercuryapp.com/",
     stack: [
@@ -61,35 +61,35 @@ const items = [
   },
   {
     id: 5,
-    title: "Hirefoster Test",
-    img: "./test.jpg",
-    desc: "Hirefoster Test is a React-based recruitment platform with a 3-tier assessment system: cognitive ability, English proficiency (spoken and written), and role-specific tests. It features step tests, MCQs, and a speech-to-text function. The platform includes a talent interface for testing and an admin dashboard for managing and evaluating submissions.",
-    url: "https://test.hirefoster.com/",
+    title: "ExchangePal",
+    img: "./exchange.png",
+    desc: "I led the frontend development of the ExchangePal company website and the internal admin dashboard that powers the mobile app. The website showcases the brand and services with a clean, responsive design, while the admin dashboard enables real-time management of users, transactions, and platform settings. My role involved building scalable React components, integrating APIs, and ensuring seamless performance across web and mobile platforms.",
+    url: "https://www.exchangepal.com/",
     stack: [
-      "React",
+      "Next",
+      "TypeScript",
       "Tailwind CSS",
       "Axios",
       "Google Analytics",
       "Facebook Pixels",
-      "NodeJS",
     ],
   },
 
-  // {
-  //   id: 6,
-  //   title: "Zedi Academy",
-  //   img: "./acad.jpg",
-  //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  //   url: "https://academy.thezedi.ai/",
-  //   stack: [
-  //     "NextJs",
-  //     "Tailwind CSS",
-  //     "Axios",
-  //     "Airtable",
-  //     "Google Analytics",
-  //     "Facebook Pixels",
-  //   ],
-  // },
+  {
+    id: 6,
+    title: "Zedintro",
+    img: "/zedintro.png", 
+    desc: "I collaborated with a team of developers on the frontend development of Zedintro, a networking platform designed to simplify warm introductions across industries. My contributions included building responsive UI components, implementing reusable layouts, and integrating API endpoints to support key user flows. I focused on writing clean, maintainable code to ensure a consistent and engaging user experience across devices.",
+    url: "https://zedintro.com/",
+    stack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "REST APIs",
+      "GitHub",
+      "Responsive Design",
+    ],
+  },
 ];
 
 const Single = ({item}) =>{

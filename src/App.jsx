@@ -11,7 +11,7 @@ import Test from "./Test";
 const App = () => {
   return (
     <div>
-      <Toaster position="top-right" />
+      <Toaster   position="top-right" />
       <section id="Home" className="">
         <Navbar />
         <Hero />
