@@ -21,13 +21,13 @@ const About = () => {
         // variants={variants}
       >
         <p>
-          Hi, I’m Sarah Akan, a Frontend Developer based in Lagos, Nigeria, focused on building user centered, scalable web applications. I enjoy turning ideas into clean, intuitive interfaces while writing maintainable and reusable code.
+           Hi, I’m Sarah Akan, a Frontend Developer based in Lagos, Nigeria. I build user centered, scalable web applications with a focus on clean, maintainable code and intuitive interfaces.
 
-I currently work as a Frontend Developer at Zedi Inc, where I collaborate with cross functional teams to build user focused, production ready features. I thrive in environments that encourage learning, ownership, and continuous improvement.
+I currently work as a Frontend Developer at Zedi Inc, collaborating with cross functional teams to deliver user focused, production ready features.
 
-I am naturally curious and driven by growth. I enjoy learning new technologies, improving my craft, and stepping outside my comfort zone to take on new challenges. When I am not building products, I enjoy singing, reading, cooking, watching movies, and dancing with enthusiasm.
+I’m curious, growth driven, and enjoy learning new technologies and taking on new challenges. Outside of work, I enjoy singing, reading, cooking, watching movies, and dancing.
 
-I am always open to new opportunities, meaningful collaborations, and conversations about building impactful digital experiences.
+I’m open to new opportunities and collaborations focused on building impactful digital products.
         </p>
       </div>
       <div className="formContainer">
